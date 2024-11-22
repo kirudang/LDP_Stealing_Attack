@@ -1,11 +1,9 @@
 
 # ε-STEAL: Certified LLM Stealing with Local Differential Privacy
 ## Requirements
-To facilitate the setup, we recommend creating a dedicated environment and installing the necessary packages from `requirements.txt`. The simulations were conducted on an NVIDIA A100 GPU with PyTorch (torch 2.4.0) and CUDA 12.
+To facilitate the setup, we recommend creating a dedicated environment and installing the necessary packages from `stealing.yml`. The simulations were conducted on an NVIDIA A100 GPU with PyTorch (torch 2.4.0) and CUDA 12.
 ```bash
-conda create  -n  env  python=3.10
-conda activate  env
-pip install  -r  requirements.txt
+conda env create --file stealing.yml
 ```
 ## Experiments with our ε-STEAL Attack
 All code related to our paper is located in the `src/` folder, and datasets are stored in the `data/` folder. Instructions for reproducing the results or training the model with your dataset are provided.
