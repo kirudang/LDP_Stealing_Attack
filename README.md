@@ -18,7 +18,7 @@ python Add_noise_embedding.py
 **Important Notes:**
 - Adjust `data = torch.arange(32000)` to match the vocabulary size of your model (32000 is for Llama2/Mistral).
 - If your model is an encoder, replace `emb = model.model.embed_tokens(data.long()).detach()` with `emb = model.model.decoder.embed_tokens(data.long()).detach()`.
-### Step 2: Fine-Tune the Attack Model on Watermarked Text with Noise
+### Step 2: Fine-Tune the Attack Model on Watermarked Text with Noise, using LoRA
 To proceed with this step, ensure you have the necessary training and testing data prepared with the watermark scheme targeted for the attack. Detailed instructions on generating watermarked texts using the data in the `data/` folder are provided below. 
 During this session, we continue to use LoRA for fine-tuning. However, a key adjustment involves updating the model with new embeddings via the `update_model` function.
 ```bash
