@@ -1,7 +1,7 @@
 
 # ε-STEAL: Certified LLM Stealing with Local Differential Privacy
 ## Requirements
-To facilitate the setup, we recommend creating a dedicated environment and installing the necessary packages from `stealing.yml`. The simulations were conducted on an NVIDIA A100 GPU with PyTorch (torch 2.4.0) and CUDA 12.
+To facilitate the setup, we recommend creating a dedicated environment and installing the necessary packages from `stealing.yml`. The simulations were conducted on Python version 3.10.13,using NVIDIA A100 GPU with PyTorch (torch 2.4.0) and CUDA 12.
 ```bash
 conda env create --file stealing.yml
 ```
