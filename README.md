@@ -1,11 +1,11 @@
 
-# ε-STEAL: Certified LLM Stealing with Local Differential Privacy
+# $\delta$-STEAL: LLM Stealing with Local Differential Privacy
 ## Requirements
 To facilitate the setup, we recommend creating a dedicated environment and installing the necessary packages from `stealing.yml`. The simulations were conducted on Python version 3.10.13,using NVIDIA A100 GPU with PyTorch (torch 2.4.0) and CUDA 12.
 ```bash
 conda env create --file stealing.yml
 ```
-## Experiments with our ε-STEAL Attack
+## Experiments with our $\delta$-STEAL Attack
 All code related to our paper is located in the `src/` folder, and datasets are stored in the `data/` folder. Instructions for reproducing the results or training the model with your dataset are provided.
 ### Step 1: Add Noise to the Model Embeddings
 We applied Laplace noise in our experiments. To execute the attack, modify the following parameters in `Add_noise_embedding.py`:
